@@ -11,6 +11,10 @@ public class OpenShiftController {
     public String hell(){
         return "Hello";
     }
+    @GetMapping()
+    public String test(){
+        return "Test";
+    }
 
     @GetMapping("/hello/{name}")
     public String hell(@PathVariable String name){
